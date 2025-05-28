@@ -7,11 +7,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lightest-blue': '#F7FBFC', // New: Very light, almost white-blue
-        'light-blue-bg': '#D6E6F2', // New: Slightly darker background blue
-        'medium-blue-accent': '#B9D7EA', // New: Accent color, for important sections
-        'dark-blue': '#769FCD', // New: Primary accent/button color, darker blue
+        'primary-blue': '#533B4D', 
+        'accent-orange': '#F564A9',
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], 
+      },
+      keyframes: { 
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        }
+      },
+      animation: { 
+        'fade-in-down': 'fade-in-down 0.3s ease-out forwards',
+      }
     },
   },
   plugins: [],
