@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-primary-blue text-white py-4 shadow-md  z-50"> {/* Tambahkan relative dan z-index untuk mobile menu */}
+    <header className="bg-primary-blue text-white py-4 shadow-md relative z-50"> {/* Tambahkan relative dan z-index untuk mobile menu */}
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo and Contact Info */}
         <div className="flex items-center space-x-4">

@@ -24,7 +24,7 @@ const AboutUsSection = () => {
           <div className="grid grid-cols-3 gap-4 text-center">
             <div className="p-4 border rounded-lg shadow-sm">
               <img
-                src="src/assets/icons/facilities.svg"
+                src="/assets/icons/facilities.svg"
                 alt="Facilities Icon"
                 className="w-10 h-10 mx-auto mb-2"
               />
@@ -33,7 +33,7 @@ const AboutUsSection = () => {
             </div>
             <div className="p-4 border rounded-lg shadow-sm">
               <img
-                src="src/assets/icons/staffs.svg" 
+                src="/assets/icons/staffs.svg" 
                 alt="Staffs Icon"
                 className="w-10 h-10 mx-auto mb-2 "
               />
@@ -42,7 +42,7 @@ const AboutUsSection = () => {
             </div>
             <div className="p-4 border rounded-lg shadow-sm">
               <img
-                src="src/assets/icons/clients.svg" 
+                src="/assets/icons/clients.svg" 
                 alt="Clients Icon"
                 className="w-10 h-10 mx-auto mb-2"
               />
