@@ -178,7 +178,7 @@ const BookingSection = ({ initialFacilityId }) => {
     });
 
     // Konfirmasi booking ke user
-    alert(`Booking confirmed for ${projectData.facilities.find(f => f.id === selectedFacilityId)?.name} on ${bookingDate} for $${estimatedPrice}. Check console for full details.`);
+    alert(`Booking confirmed for ${projectData.facilities.find(f => f.id === selectedFacilityId)?.name} on ${bookingDate} for $${estimatedPrice}.`);
 
     // Reset form setelah booking berhasil
     setUserName('');

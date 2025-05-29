@@ -61,7 +61,7 @@ const FacilityCard = ({ id,imageUrl, facilityType, price, description }) => {
         </p>
 
         <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mt-auto">
-          <Link to={`/booking/${id}`} className="bg-primary-blue hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded transition-colors w-full">
+          <Link to={`/facility/${id}`} className="bg-primary-blue hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded transition-colors w-full">
             BOOK NOW
           </Link>
         </div>
