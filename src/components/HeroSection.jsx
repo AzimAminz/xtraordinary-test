@@ -1,4 +1,5 @@
-import React from 'react';
+
+import { Link } from 'react-router-dom';  
 
 const HeroSection = () => {
   return (
@@ -15,9 +16,9 @@ const HeroSection = () => {
         Every booking <br />brings hope 
         </h2>
         <div className="flex space-x-4 justify-center">
-          <button className="bg-accent-orange text-white px-8 py-3 rounded-md hover:bg-pink-900 transition-colors text-lg">
+          <Link to="/facility" className="bg-accent-orange text-white px-8 py-3 rounded-md hover:bg-pink-900 transition-colors text-lg">
             BOOK NOW
-          </button>
+          </Link>
           
         </div>
       </div>

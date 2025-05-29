@@ -7,7 +7,7 @@ const Footer = () => {
 
         {/* Column 1: HopeCourt Info */}
         <div>
-          <h4 className="text-2xl font-bold mb-4 text-accent-orange">HopeCourt</h4>
+          <h4 className="text-2xl font-bold mb-4 text-white">HopeCourt</h4>
           <p className="text-gray-300 leading-relaxed mb-4">
             A community space dedicated to sports and charity. Your bookings directly support underprivileged students.
           </p>
