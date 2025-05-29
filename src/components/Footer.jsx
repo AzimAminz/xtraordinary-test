@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
+      
       <div className="container mx-auto px-4 mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
         <p>&copy; {new Date().getFullYear()} HopeCourt. All Rights Reserved. Designed by You.</p>
       </div>

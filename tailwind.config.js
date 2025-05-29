@@ -9,6 +9,7 @@ export default {
       colors: {
         'primary-blue': '#533B4D', 
         'accent-orange': '#F564A9',
+        'soft-pink': '#FAA4BD',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], 

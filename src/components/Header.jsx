@@ -19,11 +19,10 @@ const Header = () => {
         {/* Desktop Navigation Links */}
         {/* 'md:flex' akan memastikan ini tampil sebagai flexbox hanya di layar md ke atas */}
         <nav className="hidden md:flex space-x-6 text-lg">
-          <a href="#" className="hover:text-accent-orange transition-colors">HOME</a>
-          <a href="#" className="hover:text-accent-orange transition-colors">ABOUT</a>
-          <a href="#" className="hover:text-accent-orange transition-colors">ROOMS</a>
-          <a href="#" className="hover:text-accent-orange transition-colors">PAGES</a>
-          <a href="#" className="hover:text-accent-orange transition-colors">ELEMENTS</a>
+          <a href="/" className="hover:text-accent-orange transition-colors">HOME</a>
+          <a href="/facility" className="hover:text-accent-orange transition-colors">FACILITY</a>
+          <a href="/about" className="hover:text-accent-orange transition-colors">ABOUT</a>
+          
         </nav>
 
 
@@ -45,11 +44,9 @@ const Header = () => {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-primary-blue shadow-lg  transition-all duration-300 ease-in-out transform origin-top animate-fade-in-down">
           <ul className="flex flex-col ">
-            <NavbarItem href="#" title="HOME"/>
-            <NavbarItem href="#" title="ABOUT"/>
-            <NavbarItem href="#" title="ROOMS"/>
-            <NavbarItem href="#" title="PAGES"/>
-            <NavbarItem href="#" title="ELEMENTS"/>
+            <NavbarItem href="/" title="HOME"/>
+            <NavbarItem href="/facility" title="FACILITY"/>
+            <NavbarItem href="/about" title="ABOUT"/>
           </ul>
         </div>
       )}

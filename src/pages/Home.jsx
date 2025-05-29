@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
-import BookingForm from "../components/BookingForm";
 import AboutUsSection from "../components/AboutUsSection";
 import Footer from "../components/Footer";
 

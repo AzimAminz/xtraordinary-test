@@ -1,0 +1,64 @@
+{
+  "project": {
+    "name": "HopeCourt",
+    "slogan": "Every booking brings hope — a small act that creates a big impact for students in need.",
+    "description": "Every weekend, our facilities open not just for sports — but for hope. Each booking directly supports underprivileged students with essentials like school uniforms, supplies, and access to extra classes. At HopeCourt, community and purpose come together to build a brighter future, one game at a time.",
+    "goal": {
+      "monthly_fund_target_usd": 1000,
+      "maintenance_cost_per_day_usd": 100
+    }
+  },
+  "booking_hours": {
+    "days": ["Saturday", "Sunday"],
+    "start_time": "08:00",
+    "end_time": "12:00",
+    "total_hours_per_day": 4
+  },
+  "facilities": [
+    {
+      "id": "swimming_pool",
+      "picture": "/assets/images/swimming_pool.jpg",
+      "name": "Swimming Pool",
+      "price_full_session_usd": 140,
+      "price_per_hour_usd": 35,
+      "description": "A well-maintained swimming pool suitable for all ages, perfect for training and recreational swimming."
+    },
+    {
+      "id": "football_1",
+      "picture": "/assets/images/football_1.jpg",
+      "name": "Football Field",
+      "price_full_session_usd": 170,
+      "price_per_hour_usd": 42.5,
+      "description": "A standard size football field with natural grass, ideal for training sessions and friendly matches."
+    },
+    {
+      "id": "football_2",
+      "picture": "/assets/images/football_2.jpg",
+      "name": "Football Field 2",
+      "price_full_session_usd": 170,
+      "price_per_hour_usd": 42.5,
+      "description": "A football fields available for simultaneous bookings, providing ample space for tournaments and group activities."
+    }
+  ],
+  "pricing_options": [
+    {
+      "name": "Option 1 Full Combo",
+      "included": ["Swimming Pool", "Football Field x2"],
+      "total_price_usd": 310,
+      "total_price_per_hour_usd": 77.5
+    }
+  ],
+  "contact": {
+    "email": "helpinghands@thexdschool.com",
+    "platforms": [
+      {
+        "platform": "Facebook",
+        "page": "HopeCourt Official"
+      },
+      {
+        "platform": "Instagram",
+        "handle": "@hopecourt_community"
+      }
+    ]
+  }
+}
