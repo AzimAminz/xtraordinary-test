@@ -142,7 +142,7 @@ const BookingSection = ({ initialFacilityId }) => {
       if (!newBookedSlots[bookingDate]) {
         newBookedSlots[bookingDate] = {};
       }
-      if (!newBookots[bookingDate][selectedFacilityId]) { // typo newBookots -> newBookedSlots
+      if (!newBookedSlots[bookingDate][selectedFacilityId]) { 
         newBookedSlots[bookingDate][selectedFacilityId] = {};
       }
 
@@ -214,7 +214,7 @@ const BookingSection = ({ initialFacilityId }) => {
               BOOK A FACILITY
             </h3>
 
-            <form onSubmit={handleBookingSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form onSubmit={handleBookingSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4" action="">
               {/* Your Name */}
               <div>
                 <label htmlFor="userName" >Your Name</label>
@@ -222,7 +222,7 @@ const BookingSection = ({ initialFacilityId }) => {
                   type="text"
                   id="userName"
                   // -------- PERUBAHAN DI SINI --------
-                  className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
+                  className="w-full px-4 py-3  border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
                   // ------------------------------------
                   placeholder="Your Name"
                   value={userName}
@@ -238,7 +238,7 @@ const BookingSection = ({ initialFacilityId }) => {
                   type="email"
                   id="userEmail"
                   // -------- PERUBAHAN DI SINI --------
-                  className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
+                  className="w-full px-4 py-3  border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
                   // ------------------------------------
                   placeholder="Your Email"
                   value={userEmail}
@@ -254,7 +254,7 @@ const BookingSection = ({ initialFacilityId }) => {
                   type="date"
                   id="bookingDate"
                   // -------- PERUBAHAN DI SINI --------
-                  className={`w-full px-4 py-3 bg-input-soft-pink border rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 ${dateError ? 'border-red-500 ring-red-500' : 'border-primary-blue ring-accent-orange'} text-primary-blue`}
+                  className={`w-full px-4 py-3 border rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 ${dateError ? 'border-red-500 ring-red-500' : 'border-primary-blue ring-accent-orange'} text-primary-blue`}
                   // ------------------------------------
                   value={bookingDate}
                   onChange={(e) => setBookingDate(e.target.value)}
@@ -269,7 +269,7 @@ const BookingSection = ({ initialFacilityId }) => {
                 <select
                   id="sessionType"
                   // -------- PERUBAHAN DI SINI --------
-                  className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
+                  className="w-full px-4 py-3.5  border border-primary-blue rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
                   // ------------------------------------
                   value={sessionType}
                   onChange={(e) => setSessionType(e.target.value)}
@@ -287,7 +287,7 @@ const BookingSection = ({ initialFacilityId }) => {
                   readOnly
                   id="facility"
                   // -------- PERUBAHAN DI SINI --------
-                  className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue cursor-not-allowed"
+                  className="w-full px-4 py-3  border border-primary-blue rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue cursor-not-allowed"
                   // ------------------------------------
                   value={currentFacilityName}
                 />
@@ -300,7 +300,7 @@ const BookingSection = ({ initialFacilityId }) => {
                   <select
                     id="startTime"
                     // -------- PERUBAHAN DI SINI --------
-                    className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
+                    className="w-full px-4 py-3  border border-primary-blue rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
                     // ------------------------------------
                     value={startTime}
                     onChange={(e) => setStartTime(e.target.value)}
@@ -322,7 +322,7 @@ const BookingSection = ({ initialFacilityId }) => {
                     min="1"
                     max={bookingHoursEnd - parseInt(startTime.split(':')[0])}
                     // -------- PERUBAHAN DI SINI --------
-                    className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
+                    className="w-full px-4 py-3  border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue"
                     // ------------------------------------
                     placeholder="Number of Hours"
                     value={numHours}
@@ -352,7 +352,7 @@ const BookingSection = ({ initialFacilityId }) => {
                 <textarea
                   id="specialRequest"
                   // -------- PERUBAHAN DI SINI --------
-                  className="w-full px-4 py-3 bg-input-soft-pink border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue h-24"
+                  className="w-full px-4 py-3  border border-primary-blue rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-orange text-primary-blue h-24"
                   // ------------------------------------
                   placeholder="Special Request"
                   value={specialRequest}
