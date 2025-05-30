@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home.jsx'
 import NotFound from './pages/NotFound.jsx';
-import About from './pages/About.jsx';
 import Facility from './pages/Facility.jsx';
 import Booking from './pages/Booking.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
