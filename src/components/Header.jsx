@@ -21,7 +21,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-6 text-lg">
           <a href="/" className="hover:text-accent-orange transition-colors">HOME</a>
           <a href="/facility" className="hover:text-accent-orange transition-colors">FACILITY</a>
-          <a href="#about" className="hover:text-accent-orange transition-colors">ABOUT</a>
+          <a href="/#about" className="hover:text-accent-orange transition-colors">ABOUT</a>
           
         </nav>
 
@@ -46,7 +46,7 @@ const Header = () => {
           <ul className="flex flex-col ">
             <NavbarItem href="/" title="HOME"/>
             <NavbarItem href="/facility" title="FACILITY"/>
-            <NavbarItem href="#about" title="ABOUT"/>
+            <NavbarItem href="/#about" title="ABOUT"/>
           </ul>
         </div>
       )}
