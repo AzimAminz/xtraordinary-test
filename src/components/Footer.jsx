@@ -54,7 +54,7 @@ const Footer = () => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-accent-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.727A8 8 0 016.343 5.273v11.454a8 8 0 0111.314 0z" />
               </svg>
-              <span className="text-gray-300">123 ABC Street, Melaka, Malaysia</span>
+              <span className="text-gray-300">123 ABC Street, Kuala Lumpur, Malaysia</span>
             </li>
             <li className="flex items-center space-x-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-accent-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -85,7 +85,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-accent-orange text-white px-4 py-2 rounded-r-md hover:bg-orange-600 transition-colors"
+              className="bg-accent-orange text-white px-4 py-2 rounded-r-md hover:bg-pink-900 transition-colors"
             >
               Subscribe
             </button>
